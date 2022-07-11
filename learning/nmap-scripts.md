@@ -7,8 +7,8 @@ https://www.youtube.com/watch?v=3U1pJ-eJrAU
 Lua script that "allows users to write (and share) simple scripts to automate a wide variety of networking tasks. Those scripts are then executed in parallel with the speed and efficiency you expect from Nmap."
 
 ## Tools
-https://github.com/vulnersCom/nmap-vulners
-https://github.com/scipag/vulscan
+- https://github.com/vulnersCom/nmap-vulners
+- https://github.com/scipag/vulscan
 
 ## Goal
 Take NMap's identified scanning info and print out CVEs with detailed info about vulnerabilities for epxloitations
