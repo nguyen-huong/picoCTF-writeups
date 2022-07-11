@@ -17,7 +17,6 @@ Take NMap's identified scanning info and print out CVEs with detailed info about
 Go to NMap scripts
 ``` terminal
 cd /usr/share/nmap/scripts/
-
 ```
 Clone the scripts
 ```
@@ -28,16 +27,16 @@ sudo git clone https://github.com/scipag/vulscan.git
 Make sure vulnerabilities databases are up to date
 ```
 cd vulscan/utilities/updater/
-sudo chmod +x updateFiles.sh
-./updateFiles.sh
 
+sudo chmod +x updateFiles.sh
+
+./updateFiles.sh
 ```
 Scan w/ Vulners
 
 Output: Open ports, CVE scores & links
 ```
 sudo nmap --script vulscan/ -sV -p# ###.###.###.###
-
 ```
 Scan w/ Vulscan
 
@@ -47,5 +46,4 @@ sudo nmap --script vulscan/ -sV -p# ###.###.###.###
 
 #specify database
 sudo nmap --script vulscan/ --script-args vulscandb=exploitdb.csv -sV -p# ###.###.###.###
-
 ```
