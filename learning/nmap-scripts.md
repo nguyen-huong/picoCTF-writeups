@@ -15,7 +15,7 @@ Take NMap's identified scanning info and print out CVEs with detailed info about
 
 ## Solution
 Go to NMap scripts
-``` python
+``` lua
 cd /usr/share/nmap/scripts/
 ```
 Clone the scripts
