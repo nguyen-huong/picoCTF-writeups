@@ -15,17 +15,16 @@ Take NMap's identified scanning info and print out CVEs with detailed info about
 
 ## Solution
 Go to NMap scripts
-``` terminal
+``` python
 cd /usr/share/nmap/scripts/
 ```
 Clone the scripts
-```
+``` python
 sudo git clone https://github.com/vulnersCom/nmap-vulners.git
 sudo git clone https://github.com/scipag/vulscan.git
-
 ```
 Make sure vulnerabilities databases are up to date
-```
+``` python
 cd vulscan/utilities/updater/
 
 sudo chmod +x updateFiles.sh
@@ -35,13 +34,13 @@ sudo chmod +x updateFiles.sh
 Scan w/ Vulners
 
 Output: Open ports, CVE scores & links
-```
+``` python
 sudo nmap --script vulscan/ -sV -p# ###.###.###.###
 ```
 Scan w/ Vulscan
 
 Output: Open ports, CVEs with descriptions from databases
-```
+``` python
 sudo nmap --script vulscan/ -sV -p# ###.###.###.###
 
 #specify database
