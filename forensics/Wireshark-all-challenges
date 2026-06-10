@@ -1,10 +1,10 @@
-# Wireshark doo doo doo
+#Wireshark doo doo doo
 I used Wireview and loaded the pcap file. I was able to find the flag in a line distribution after I filtered for just HTTP traffic
 ```
 tcp.port==80
 ```
 
-# Wireshark two two two
+#Wireshark two two two
 In this challenge, the obfuscated line distribution in the sites no longer means anything despite it has picoCTF{} in front of it. I spent a hot minute trying to extract all of them, and try to decode a few but it was meaningless.
 
 I saw, however, the subdomains follow a pattern. 
