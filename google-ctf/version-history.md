@@ -1,12 +1,13 @@
 <img width="1352" height="646" alt="Screenshot 2026-06-18 at 9 16 13 AM" src="https://github.com/user-attachments/assets/f0769cdf-7904-4dfe-a669-d76afac08b2c" />
 
-prompt: I wrote some FAQs about this CTF. Took me a few commits to get it right though.
+# prompt: I wrote some FAQs about this CTF. Took me a few commits to get it right though.
 https://version-history-web.2025-bq.ctfcompetition.com/
 
 To solve this, I first tried to inspect, but found nothing much. I also looked at Wayback Machine, and only saw one commit changes in Dec 2025 besides 2026, but no changes. 
 
-I installed git-dumper and got these as results: 
+## I installed git-dumper and got these as results: 
 link: https://colab.research.google.com/drive/1OZ7TtQTlnSE2vextVfIcQDeGlYRmGUpF#scrollTo=exBBtzv92hor
+
 in kali: python3 -m venv venv
 source venv/bin/activate
 
@@ -14,12 +15,12 @@ source venv/bin/activate
 
 note to self: add grep 200 | less
 
-here's what I found in one of them: 
+## here's what I found in one of them: 
 https://version-history-web.2025-bq.ctfcompetition.com/.git/logs/HEAD
 > 0000000000000000000000000000000000000000 3aa28a2927b56b7c98864107dc7ae4406dd7eb2b Challenge Author <challengeauthor@example.example> 1764186344 +0000	commit (initial): Initial commit
 > 3aa28a2927b56b7c98864107dc7ae4406dd7eb2b 42b975b547d9d3fb0494a36b5e60871da13abaf5 Challenge Author <challengeauthor@example.example> 1764186435 +0000	commit: Oops: remove the real flag from the example
 >
-in kali:
+## in kali:
 ```
 > (venv)─(kali㉿kali)-[~/Downloads/git-dumper/web]
 └─$ git checkout 3aa28a2927b56b7c98864107dc7ae4406dd7eb2b
