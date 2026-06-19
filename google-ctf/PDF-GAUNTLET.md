@@ -418,3 +418,10 @@ Part1{5 characters} with ) Tj
 
 that means pdftodrawing might work
 
+# part 5
+```
+qpdf --qdf --object-streams=disable document.pdf unpacked.pdf
+```
+
+<img width="1854" height="1324" alt="image" src="https://github.com/user-attachments/assets/c0b21c02-b937-4691-af91-ee74f57ea63f" />
+Part5{-f'05}
