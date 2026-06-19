@@ -1,5 +1,7 @@
 # prompt: Find the parts of the flag hidden in this PDF file... see the .zip file attached
 
+website to find pdf: https://pdfcrowd.com/inspect-pdf/#
+
 # part 3: 
 ```
 cat document.pdf
