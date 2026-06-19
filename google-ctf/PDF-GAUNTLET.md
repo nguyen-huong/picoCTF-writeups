@@ -425,3 +425,73 @@ qpdf --qdf --object-streams=disable document.pdf unpacked.pdf
 
 <img width="1854" height="1324" alt="image" src="https://github.com/user-attachments/assets/c0b21c02-b937-4691-af91-ee74f57ea63f" />
 Part5{-f'05}
+
+
+# other zsteg 
+```
+
+└─$ pngcheck image-0028.png    
+OK: image-0028.png (32x100, 8-bit grayscale, non-interlaced, static, 79.1%).
+                                                                                                                                                           
+
+└─$ zsteg -a image-0028.png                           
+imagedata           .. text: ["w" repeated 16 times]
+chunk:0:IHDR        .. file: Adobe Photoshop Color swatch, version 0, 32 colors; 1st RGB space (0), w 0x64, x 0x800, y 0, z 0; 2nd RGB space (0), w 0, x 0, y 0, z 0                                                                                                                                                  
+b3p,rgb,lsb,xy      .. text: "%JJJJJJ%"
+b3p,rgb,msb,xy      .. text: "[[R\t[[[[\t"
+b4,rgb,lsb,xy       .. text: "\"333333\" "
+b4,rgb,msb,xy       .. text: "fffU53wwwwww3"
+b5p,r,lsb,xy        .. text: "#?AIIH?+"
+b5p,rgb,lsb,xy      .. text: "$--6666--$$"
+b5p,rgb,msb,xy      .. text: "llK'oooo'"
+b6p,rgb,lsb,xy      .. text: "jpzzzzpo"
+b8,r,msb,xy         .. text: "ec[;{{{{;"
+b8,rgb,lsb,xy       .. text: "rrrssssssssssssrrr"
+b8,rgb,msb,xy       .. text: "eeeccc[[[;;;{{{{{{{{{{{{;;;"
+b4,rgb,lsb,xy,prime .. text: "33336f3="
+b5,r,lsb,xy,prime   .. file: GTA audio index data (SDT)
+b8,rgb,msb,xy,prime .. text: "777GGGuuu"
+b6p,rgb,lsb,yx      .. text: "u*`eopJ:"
+b1,r,msb,yx,prime   .. file: Atari DEGAS Elite compressed bitmap 320 x 200 x 16, color palette 0020 0000 00c0 0080 0000 ...
+b2,r,lsb,yx,prime   .. file: GLS_BINARY_MSB_FIRST
+b4,r,lsb,yx,prime   .. file: Adobe Photoshop Color swatch, version 0, 175 colors; 1st RGB space (0), w 0, x 0, y 0, z 0; 2nd space (1280), w 0, x 0, y 0, z 0x80                                                                                                                                                      
+b4,r,msb,yx,prime   .. file: Adobe Photoshop Color swatch, version 0, 245 colors; 1st RGB space (0), w 0, x 0, y 0, z 0; 2nd space (40960), w 0, x 0, y 0, z 0x1                                                                                                                                                      
+b5p,r,lsb,yx,prime  .. file: Adobe Photoshop Color swatch, version 0, 87 colors; 1st RGB space (0), w 0, x 0, y 0, z 0; 2nd space (1280), w 0, x 0, y 0, z 0xc0                                                                                                                                                       
+b5p,r,msb,yx,prime  .. file: Adobe Photoshop Color swatch, version 0, 234 colors; 1st RGB space (0), w 0, x 0, y 0, z 0; 2nd space (40960), w 0, x 0, y 0, z 0x3                                                                                                                                                      
+b6p,r,lsb,yx,prime  .. file: Adobe Photoshop Color swatch, version 0, 171 colors; 1st RGB space (0), w 0, x 0, y 0, z 0; 2nd space (256), w 0, x 0, y 0, z 0x60                                                                                                                                                       
+b6p,r,msb,yx,prime  .. file: Adobe Photoshop Color swatch, version 0, 213 colors; 1st RGB space (0), w 0, x 0, y 0, z 0; 2nd space (32768), w 0, x 0, y 0, z 0x6                                                                                                                                                      
+b7p,r,lsb,yx,prime  .. file: Adobe Photoshop Color swatch, version 0, 213 colors; 1st RGB space (0), w 0, x 0, y 0, z 0; 2nd space (256), w 0, x 0, y 0, z 0xb0                                                                                                                                                       
+b7p,r,msb,yx,prime  .. file: Adobe Photoshop Color swatch, version 0, 171 colors; 1st RGB space (0), w 0, x 0, y 0, z 0; 2nd space (32768), w 0, x 0, y 0, z 0xd                                                                                                                                                      
+b1,rgb,lsb,YX,prime .. file: SIMH tape data
+b2,r,msb,YX,prime   .. file: Windows boot log, header size 0x400, 0x1100000 valid bytes; entry size 0, 0 seconds, severity 0, version 0, event 0; entry size 0, 0 seconds, severity 0, version 0, event 0                                                                                                             
+b8,rgb,msb,YX,prime .. text: "VVV;;;sss"
+b3p,rgb,lsb,Xy      .. text: "%JJJJJJ%"
+b3p,rgb,msb,Xy      .. text: "\t[[[[\tR[["
+b4,r,lsb,Xy         .. text: "#DUffUC1"
+b4,r,msb,Xy         .. text: "z:3233(3"
+b4,rgb,lsb,Xy       .. text: "\"333333\" "
+b4,rgb,msb,Xy       .. text: "=3wwwwww3SUfff"
+b5,r,lsb,Xy         .. text: "xWYNt%)JR"
+b5p,r,lsb,Xy        .. text: "8K\\ddcQB"
+b5p,r,msb,Xy        .. text: "u5&$&&0&"
+b5p,rgb,lsb,Xy      .. text: "$$--6666--$"
+b5p,rgb,msb,Xy      .. text: "'oooo'Kll"
+b6p,rgb,lsb,Xy      .. text: "opzzzzpj"
+b8,r,msb,Xy         .. text: ";{{{{;[ce"
+b8,rgb,lsb,Xy       .. text: "rrrssssssssssssrrr"
+b8,rgb,msb,Xy       .. text: ";;;{{{{{{{{{{{{;;;[[[ccce"
+b4,rgb,lsb,Xy,prime .. text: "DB\"37wwx"
+b5,r,lsb,Xy,prime   .. file: GTA audio index data (SDT)
+b8,rgb,msb,Xy,prime .. text: "777GGGSSS"
+b1,r,msb,yX,prime   .. file: Atari DEGAS Elite compressed bitmap 320 x 200 x 16, color palette 0020 0000 00c0 0000 0000 ...
+b2,r,lsb,yX,prime   .. file: GLS_BINARY_MSB_FIRST
+b4,r,lsb,yX,prime   .. file: Adobe Photoshop Color swatch, version 0, 175 colors; 1st RGB space (0), w 0, x 0, y 0, z 0; 2nd space (3328), w 0, x 0, y 0, z 0x20                                                                                                                                                      
+b4,r,msb,yX,prime   .. file: Adobe Photoshop Color swatch, version 0, 245 colors; 1st RGB space (0), w 0, x 0, y 0, z 0; 2nd space (45056), w 0, x 0, y 0, z 0x4                                                                                                                                                      
+b5p,r,lsb,yX,prime  .. file: Adobe Photoshop Color swatch, version 0, 87 colors; 1st RGB space (0), w 0, x 0, y 0, z 0; 2nd space (1280), w 0, x 0, y 0, z 0x90                                                                                                                                                       
+b5p,r,msb,yX,prime  .. file: Adobe Photoshop Color swatch, version 0, 234 colors; 1st RGB space (0), w 0, x 0, y 0, z 0; 2nd space (40960), w 0, x 0, y 0, z 0x9                                                                                                                                                      
+b6p,r,lsb,yX,prime  .. file: Adobe Photoshop Color swatch, version 0, 171 colors; 1st RGB space (0), w 0, x 0, y 0, z 0; 2nd space (256), w 0, x 0, y 0, z 0x48                                                                                                                                                       
+b6p,r,msb,yX,prime  .. file: Adobe Photoshop Color swatch, version 0, 213 colors; 1st RGB space (0), w 0, x 0, y 0, z 0; 2nd space (32768), w 0, x 0, y 0, z 0x12                                                                                                                                                     
+b7p,r,lsb,yX,prime  .. file: Adobe Photoshop Color swatch, version 0, 213 colors; 1st RGB space (0), w 0, x 0, y 0, z 0; 2nd space (256), w 0, x 0, y 0, z 0xa4                                                                                                                                                       
+b7p,r,msb,yX,prime  .. file: Adobe Photoshop Color swatch, version 0, 171 colors; 1st RGB space (0), w 0, x 0, y 0, z 0; 2nd space (32768), w 0, x 0, y 0, z 0x25                                                                                                                                                     
+b2,r,msb,Yx,prime   .. file: Windows boot log, header size 0x400, 0x1300000 valid bytes; entry size 0, 0 seconds, severity 0, version 0, event 0; entry size 0, 0 seconds, severity 0, version 0, event 0          
+```
