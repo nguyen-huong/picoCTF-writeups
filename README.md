@@ -4,3 +4,5 @@ https://medium.com/@smohrwz/ncl-password-challenges-how-to-scrape-themed-wordlis
 guide to basic ctf: 
 https://medium.com/@suzettebecraft/ctf-starter-pack-011c72684fb1
 wireshark and mostly web: https://docs.google.com/document/d/1f0Bg3n94toah_WNL1gsCi9zjnV2U012Nt2wWNql_miw/edit?tab=t.0
+
+MY TWO WORLD COLLIDES-compression and cyber past ctf: https://www.kaggle.com/code/robikscube/23-flags-capture-the-flag-defcon31
